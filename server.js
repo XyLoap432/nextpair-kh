@@ -4,8 +4,8 @@ const path = require("path");
 const crypto = require("crypto");
 
 const root = __dirname;
-const publicDir = path.join(root, "public");
-const dataFile = path.join(root, "data", "db.json");
+const publicDir = fs.existsSync(path.join(root, "public")) ? path.join(root, "public") : root;
+const dataFile = fs.existsSync(path.join(root, "data", "db.json")) ? path.join(root, "data", "db.json") : path.join(root, "db.json");
 const uploadDir = path.join(root, "uploads");
 const PORT = process.env.PORT || 5173;
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "nextpairkh2026";
@@ -15,6 +15,8 @@ const MAX_UPLOAD_BYTES = 5 * 1024 * 1024;
 const sessions = new Map();
 const rateBuckets = new Map();
 const loginFailures = new Map();
+
+fs.mkdirSync(uploadDir, { recursive: true });
 
 const mime = {
   ".html": "text/html; charset=utf-8",
