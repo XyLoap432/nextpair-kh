@@ -532,6 +532,16 @@ input:focus, select:focus, textarea:focus {
   font-size: 0.86rem;
 }
 
+.card-actions .share-action {
+  grid-column: 1 / -1;
+}
+
+.share-action.copied {
+  color: #080808;
+  background: #f5c247;
+  border-color: #080808;
+}
+
 .split-section {
   display: grid;
   grid-template-columns: minmax(280px, 0.8fr) minmax(320px, 1fr);
@@ -645,7 +655,7 @@ input:focus, select:focus, textarea:focus {
   font-weight: 900;
 }
 
-.contact-actions a::after { content: "↗"; }
+.contact-actions a::after { content: "â†—"; }
 
 .admin-panel {
   background: #efebe3;
