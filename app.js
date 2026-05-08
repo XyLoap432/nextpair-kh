@@ -36,7 +36,7 @@ const t = {
     contactEyebrow: "Contact", contactTitle: "Ready to claim your next pair?",
     contactText: "Message us with the product name, size, and any questions. We will confirm stock before payment.",
     footerText: "Authentic second-hand sneakers. Phnom Penh, Cambodia.", footerInternational: "International Orders Coming Soon",
-    allCategories: "All categories", allConditions: "All conditions", market: "Market", nextpairPrice: "NextPair", details: "Details", order: "Order",
+    allCategories: "All categories", allConditions: "All conditions", market: "Market", nextpairPrice: "NextPair", details: "Details", order: "Order", share: "Share", copyLink: "Copy link", copied: "Copied",
     size: "Size", stock: "Stock", condition: "Condition", conditionNotes: "Condition notes", authenticity: "Authenticity notes", fit: "Fit advice",
     priceNote: "Price note", save: "Save", saved: "Saved", savedEyebrow: "Saved shoes", savedTitle: "Your saved NextPair list",
     savedText: "Tap save on any sneaker and it will appear here for easy checking later.", savedEmpty: "No saved shoes yet. Tap the heart on a pair you like.",
@@ -70,7 +70,7 @@ const t = {
     contactEyebrow: "ទំនាក់ទំនង", contactTitle: "ចង់យកគូបន្ទាប់របស់អ្នកហើយឬនៅ?",
     contactText: "ផ្ញើឈ្មោះស្បែកជើង ទំហំ និងសំណួរ។ យើងនឹងបញ្ជាក់ស្តុកមុនបង់ប្រាក់។",
     footerText: "ស្បែកជើងមួយទឹកពិត។ ភ្នំពេញ កម្ពុជា។", footerInternational: "កម្ម៉ង់អន្តរជាតិ នឹងមកដល់ឆាប់ៗ",
-    allCategories: "ប្រភេទទាំងអស់", allConditions: "ស្ថានភាពទាំងអស់", market: "ទីផ្សារ", nextpairPrice: "តម្លៃ NextPair", details: "លម្អិត", order: "កម្ម៉ង់",
+    allCategories: "ប្រភេទទាំងអស់", allConditions: "ស្ថានភាពទាំងអស់", market: "ទីផ្សារ", nextpairPrice: "តម្លៃ NextPair", details: "លម្អិត", order: "កម្ម៉ង់", share: "ចែករំលែក", copyLink: "ចម្លងលីង", copied: "បានចម្លង",
     size: "ទំហំ", stock: "ស្តុក", condition: "ស្ថានភាព", conditionNotes: "កំណត់ចំណាំស្ថានភាព", authenticity: "កំណត់ចំណាំភាពពិត", fit: "ណែនាំការពាក់",
     priceNote: "កំណត់ចំណាំតម្លៃ", save: "រក្សាទុក", saved: "បានរក្សាទុក", savedEyebrow: "ស្បែកជើងបានរក្សាទុក", savedTitle: "បញ្ជី NextPair ដែលអ្នករក្សាទុក",
     savedText: "ចុចរក្សាទុកលើស្បែកជើងណាមួយ ហើយវានឹងបង្ហាញនៅទីនេះសម្រាប់មើលពេលក្រោយ។", savedEmpty: "មិនទាន់មានស្បែកជើងបានរក្សាទុកទេ។ ចុចបេះដូងលើគូដែលអ្នកចូលចិត្ត។",
@@ -104,7 +104,7 @@ const t = {
     contactEyebrow: "联系", contactTitle: "准备认领你的下一双鞋？",
     contactText: "发送产品名、尺码和问题。付款前我们会先确认库存。",
     footerText: "正品二手球鞋。柬埔寨金边。", footerInternational: "国际订单即将开放",
-    allCategories: "全部分类", allConditions: "全部成色", market: "市场价", nextpairPrice: "NextPair 价", details: "详情", order: "下单",
+    allCategories: "全部分类", allConditions: "全部成色", market: "市场价", nextpairPrice: "NextPair 价", details: "详情", order: "下单", share: "分享", copyLink: "复制链接", copied: "已复制",
     size: "尺码", stock: "库存", condition: "成色", conditionNotes: "成色说明", authenticity: "正品说明", fit: "尺码建议",
     priceNote: "价格说明", save: "收藏", saved: "已收藏", savedEyebrow: "收藏鞋款", savedTitle: "你的 NextPair 收藏清单",
     savedText: "点击任何球鞋的收藏按钮，它会出现在这里，方便之后查看。", savedEmpty: "还没有收藏鞋款。点击喜欢鞋款上的心形按钮。",
@@ -497,10 +497,16 @@ function productCard(product) {
         <div class="card-actions">
           <button class="button ghost" data-details="${esc(product.id)}">${copy("details")}</button>
           <a class="button primary" href="${orderLink(product)}" target="_blank" rel="noreferrer">${copy("order")}</a>
+          <button class="button ghost share-action" data-share="${esc(product.id)}">${copy("copyLink")}</button>
         </div>
       </div>
     </article>
   `;
+}
+
+function productShareUrl(productOrId) {
+  const id = typeof productOrId === "string" ? productOrId : productOrId.id;
+  return `${window.location.origin}${window.location.pathname}#product=${encodeURIComponent(id)}`;
 }
 
 function orderLink(product) {
@@ -543,6 +549,30 @@ function bindProductActions() {
   $$("[data-save]").forEach(button => {
     button.onclick = () => toggleSave(button.dataset.save);
   });
+  $$("[data-share]").forEach(button => {
+    button.onclick = () => copyProductLink(button.dataset.share, button);
+  });
+}
+
+async function copyProductLink(id, button) {
+  const url = productShareUrl(id);
+  try {
+    await navigator.clipboard.writeText(url);
+  } catch {
+    const input = document.createElement("input");
+    input.value = url;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand("copy");
+    input.remove();
+  }
+  const original = button.textContent;
+  button.textContent = copy("copied");
+  button.classList.add("copied");
+  setTimeout(() => {
+    button.textContent = original;
+    button.classList.remove("copied");
+  }, 1400);
 }
 
 function bindImageFallbacks() {
@@ -557,8 +587,22 @@ function bindImageFallbacks() {
 function scrollToCurrentHash() {
   const id = window.location.hash.slice(1);
   if (!id) return;
+  if (id.startsWith("product=")) {
+    openSharedProduct();
+    return;
+  }
   const target = document.getElementById(id);
   if (target) target.scrollIntoView({ block: "start" });
+}
+
+function openSharedProduct() {
+  const params = new URLSearchParams(window.location.hash.slice(1));
+  const id = params.get("product");
+  if (!id || !state.products.length) return;
+  const product = state.products.find(item => item.id === id);
+  if (!product) return;
+  $("#trending").scrollIntoView({ block: "start" });
+  openDetails(id);
 }
 
 function openDetails(id) {
@@ -589,12 +633,14 @@ function openDetails(id) {
       <div class="hero-actions">
         <a class="button primary" href="${orderLink(product)}" target="_blank" rel="noreferrer">${copy("dmToOrder")}</a>
         <button class="button ghost" data-save="${product.id}">${state.wishlist.has(product.id) ? copy("saved") : copy("save")}</button>
+        <button class="button ghost share-action" data-share="${product.id}">${copy("copyLink")}</button>
       </div>
     </div>
   `;
   $("#drawer").classList.add("open");
   $("#drawer").setAttribute("aria-hidden", "false");
   $("#drawerContent [data-save]").addEventListener("click", () => toggleSave(product.id));
+  $("#drawerContent [data-share]").addEventListener("click", event => copyProductLink(product.id, event.currentTarget));
   bindImageFallbacks();
 }
 
