@@ -1,0 +1,304 @@
+{
+  "settings": {
+    "brand": "NextPair KH",
+    "tagline": "Your next pair starts here.",
+    "location": "Phnom Penh, Cambodia",
+    "instagram": "https://www.instagram.com/nextpair.kh",
+    "facebook": "https://www.facebook.com/NextPairKH",
+    "telegram": "https://t.me/NextPairKH",
+    "phone": "+855 76 538 538 1",
+    "email": "nextpair.kh@gmail.com",
+    "priceNote": "Used prices may change based on stock, condition, demand, rarity, and market value.",
+    "deliveryNote": "Local delivery and meet-up are available in Phnom Penh. Other Cambodia locations can confirm by chat."
+  },
+  "banners": [
+    {
+      "title": "First drop soon",
+      "text": "Imported second-hand sneakers at better value.",
+      "cta": "View Trending Pairs"
+    },
+    {
+      "title": "Real pairs. Real value.",
+      "text": "Condition, size, photos, and price shown clearly before you order.",
+      "cta": "How to Order"
+    }
+  ],
+  "products": [
+    {
+      "name": "ewfwf",
+      "category": "Jordans",
+      "originalPrice": 1000,
+      "usedPrice": 50,
+      "currency": "USD",
+      "conditionScore": "9/10",
+      "conditionNotes": "very good",
+      "size": "47",
+      "stock": "Available",
+      "badges": [
+        "Price drop"
+      ],
+      "authenticity": "yes",
+      "fitAdvice": "yes",
+      "images": [
+        "/uploads/1778221813932-Screenshot-2026-05-04-at-1-51-37-in-the-.png",
+        "no"
+      ],
+      "id": "eb55eeca-7007-4085-9f3d-6241bb0b1989"
+    },
+    {
+      "id": "aj3-black-denim",
+      "name": "Air Jordan 3 Retro Black Denim",
+      "category": "Air Jordan 3",
+      "originalPrice": 249,
+      "usedPrice": 165,
+      "currency": "USD",
+      "condition": "Good",
+      "conditionScore": "8.2/10",
+      "conditionNotes": "Light midsole marks and soft heel wear. Upper still clean.",
+      "size": "US 9 / EU 42.5",
+      "stock": "Available",
+      "badges": [
+        "Trending",
+        "Price Drop"
+      ],
+      "authenticity": "Imported pair. Tags, stitching, shape, and materials checked by NextPair before listing.",
+      "fitAdvice": "True to size for most Jordan 3 buyers.",
+      "images": [
+        "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=1200&q=80"
+      ]
+    },
+    {
+      "id": "aj4-flight-club",
+      "name": "Air Jordan 4 Retro Flight Club",
+      "category": "Air Jordan 4",
+      "originalPrice": 190,
+      "usedPrice": 128,
+      "currency": "USD",
+      "condition": "Like New",
+      "conditionScore": "9/10",
+      "conditionNotes": "Very light wear. Clean outsole and strong shape.",
+      "size": "US 10 / EU 44",
+      "stock": "Available",
+      "badges": [
+        "Hot Pick",
+        "Trending"
+      ],
+      "authenticity": "Shape, cage, tongue, labels, and materials checked.",
+      "fitAdvice": "Jordan 4 can feel snug. Go half size up for wide feet.",
+      "images": [
+        "https://images.unsplash.com/photo-1745578865118-aebabd69a8d5?auto=format&fit=crop&w=1200&q=80"
+      ]
+    },
+    {
+      "id": "aj5-wolf-grey",
+      "name": "Air Jordan 5 Retro Wolf Grey",
+      "category": "Air Jordan 5",
+      "originalPrice": 220,
+      "usedPrice": 145,
+      "currency": "USD",
+      "condition": "Good",
+      "conditionScore": "8/10",
+      "conditionNotes": "Normal creasing and light sole yellowing. Still strong for daily wear.",
+      "size": "US 8.5 / EU 42",
+      "stock": "Available",
+      "badges": [
+        "2026 Demand"
+      ],
+      "authenticity": "Netting, reflective tongue, tags, and shape checked.",
+      "fitAdvice": "True to size. Roomy toe box for many buyers.",
+      "images": [
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=1200&q=80"
+      ]
+    },
+    {
+      "id": "aj6-reverse-infrared",
+      "name": "Air Jordan 6 Reverse Infrared",
+      "category": "Air Jordan 6",
+      "originalPrice": 248,
+      "usedPrice": 158,
+      "currency": "USD",
+      "condition": "Good",
+      "conditionScore": "8.3/10",
+      "conditionNotes": "Small outsole marks. Upper and lace lock in good shape.",
+      "size": "US 9.5 / EU 43",
+      "stock": "Available",
+      "badges": [
+        "Trending"
+      ],
+      "authenticity": "Heel tab, lace lock, tongue, and outsole details checked.",
+      "fitAdvice": "True to size. Slightly roomy at the toe.",
+      "images": [
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1200&q=80"
+      ]
+    },
+    {
+      "id": "aj7-cardinal",
+      "name": "Air Jordan 7 Cardinal",
+      "category": "Air Jordan 7",
+      "originalPrice": 210,
+      "usedPrice": 135,
+      "currency": "USD",
+      "condition": "Fair",
+      "conditionScore": "7.4/10",
+      "conditionNotes": "Visible creasing and some collar wear. Good budget pair.",
+      "size": "US 10.5 / EU 44.5",
+      "stock": "Low Stock",
+      "badges": [
+        "Value Pick"
+      ],
+      "authenticity": "Tongue pattern, heel tab, stitching, and inner labels checked.",
+      "fitAdvice": "True to size for most buyers.",
+      "images": [
+        "https://images.unsplash.com/photo-1556048219-bb6978360b84?auto=format&fit=crop&w=1200&q=80"
+      ]
+    },
+    {
+      "id": "aj8-bugs-bunny",
+      "name": "Air Jordan 8 Bugs Bunny",
+      "category": "Air Jordan 8",
+      "originalPrice": 193,
+      "usedPrice": 122,
+      "currency": "USD",
+      "condition": "Good",
+      "conditionScore": "8.1/10",
+      "conditionNotes": "Clean upper with normal outsole wear. Straps still firm.",
+      "size": "US 9 / EU 42.5",
+      "stock": "Available",
+      "badges": [
+        "Trending"
+      ],
+      "authenticity": "Straps, chenille logo, tongue, and labels checked.",
+      "fitAdvice": "Can feel padded. True to size or half size up for wide feet.",
+      "images": [
+        "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=80"
+      ]
+    },
+    {
+      "id": "aj9-powder-blue",
+      "name": "Air Jordan 9 Powder Blue",
+      "category": "Air Jordan 9",
+      "originalPrice": 210,
+      "usedPrice": 140,
+      "currency": "USD",
+      "condition": "Like New",
+      "conditionScore": "8.8/10",
+      "conditionNotes": "Very clean upper. Light outsole wear only.",
+      "size": "US 8 / EU 41",
+      "stock": "Available",
+      "badges": [
+        "Clean Pair"
+      ],
+      "authenticity": "Globe heel, tongue, outsole details, and labels checked.",
+      "fitAdvice": "Usually true to size.",
+      "images": [
+        "https://images.unsplash.com/photo-1543508282-6319a3e2621f?auto=format&fit=crop&w=1200&q=80"
+      ]
+    },
+    {
+      "id": "aj10-hydrangeas",
+      "name": "Air Jordan 10 Hydrangeas",
+      "category": "Air Jordan 10",
+      "originalPrice": 232,
+      "usedPrice": 150,
+      "currency": "USD",
+      "condition": "Good",
+      "conditionScore": "8/10",
+      "conditionNotes": "Light creasing. Outsole text still clear.",
+      "size": "US 7W / EU 38",
+      "stock": "Available",
+      "badges": [
+        "Women Size"
+      ],
+      "authenticity": "Outsole text, collar, tongue, and label checked.",
+      "fitAdvice": "Women sizing. Ask us if you need men/women conversion help.",
+      "images": [
+        "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=1200&q=80"
+      ]
+    },
+    {
+      "id": "aj11-gamma-blue",
+      "name": "Air Jordan 11 Gamma Blue",
+      "category": "Air Jordan 11",
+      "originalPrice": 301,
+      "usedPrice": 198,
+      "currency": "USD",
+      "condition": "Good",
+      "conditionScore": "8.5/10",
+      "conditionNotes": "Patent leather shines well. Icy sole has light yellowing.",
+      "size": "US 11 / EU 45",
+      "stock": "Available",
+      "badges": [
+        "Top Seller",
+        "Trending"
+      ],
+      "authenticity": "Patent cut, carbon plate, jumpman, box label, and shape checked.",
+      "fitAdvice": "True to size. Secure fit around the ankle.",
+      "images": [
+        "https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=1200&q=80"
+      ]
+    },
+    {
+      "id": "asics-gel-1130",
+      "name": "ASICS Gel 1130 Black Silver",
+      "category": "Trending Runner",
+      "originalPrice": 105,
+      "usedPrice": 72,
+      "currency": "USD",
+      "condition": "Good",
+      "conditionScore": "8.4/10",
+      "conditionNotes": "Comfort runner with light outsole wear. Great daily pair.",
+      "size": "US 9 / EU 42.5",
+      "stock": "Available",
+      "badges": [
+        "Budget Heat"
+      ],
+      "authenticity": "Logo, mesh, sole, and label checked.",
+      "fitAdvice": "Comfortable daily fit. True to size for most buyers.",
+      "images": [
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=1200&q=80"
+      ]
+    },
+    {
+      "id": "af1-triple-white",
+      "name": "Nike Air Force 1 Triple White",
+      "category": "Nike",
+      "originalPrice": 110,
+      "usedPrice": 75,
+      "currency": "USD",
+      "condition": "Fair",
+      "conditionScore": "7.6/10",
+      "conditionNotes": "Everyday wear and creasing. Cleaned and ready to wear.",
+      "size": "US 8.5 / EU 42",
+      "stock": "Available",
+      "badges": [
+        "Everyday Pick"
+      ],
+      "authenticity": "Swoosh, stitching, sole, and label checked.",
+      "fitAdvice": "Air Force 1 runs roomy. Many buyers go half size down.",
+      "images": [
+        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=1200&q=80"
+      ]
+    },
+    {
+      "id": "nb-9060-black",
+      "name": "New Balance 9060 Triple Black",
+      "category": "New Balance",
+      "originalPrice": 160,
+      "usedPrice": 109,
+      "currency": "USD",
+      "condition": "Like New",
+      "conditionScore": "9/10",
+      "conditionNotes": "Clean suede and outsole. Minimal wear.",
+      "size": "US 9.5 / EU 43",
+      "stock": "Reserved",
+      "badges": [
+        "Saved Pair"
+      ],
+      "authenticity": "Logo shape, suede, midsole, and labels checked.",
+      "fitAdvice": "Comfortable chunky fit. True to size.",
+      "images": [
+        "https://images.unsplash.com/photo-1579338559194-a162d19bf842?auto=format&fit=crop&w=1200&q=80"
+      ]
+    }
+  ]
+}

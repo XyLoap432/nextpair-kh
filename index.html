@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NextPair KH | Second-Hand Sneakers Cambodia</title>
+    <meta name="description" content="NextPair KH sells authentic second-hand sneakers in Cambodia with clear condition, real pair photos, fair prices, and easy social ordering." />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="NextPair KH home">
+        <img class="np-logo" src="/nextpair-logo.svg.jpg" alt="NextPair KH logo" />
+        <span>
+          <strong>NextPair KH</strong>
+          <small>Phnom Penh, Cambodia</small>
+        </span>
+      </a>
+      <button class="icon-button menu-button" id="menuButton" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#trending" data-i18n="navTrending">Trending</a>
+        <a href="#condition" data-i18n="navCondition">Condition Guide</a>
+        <a href="#size" data-i18n="navSize">Size Guide</a>
+        <a href="#saved" data-i18n="navSaved">Saved</a>
+        <a href="#order" data-i18n="navOrder">How to Order</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="language-switch" aria-label="Language selector">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="km">ខ្មែរ</button>
+        <button data-lang="zh">中文</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-media" aria-hidden="true">
+          <div class="shoe-stage">
+            <div class="shoe-card shoe-card-one"></div>
+            <div class="shoe-card shoe-card-two"></div>
+            <div class="shoe-card shoe-card-three"></div>
+            <div class="shoe-card shoe-card-four"></div>
+          </div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Cambodia-first used sneaker marketplace</p>
+          <h1 data-i18n="heroTitle">Authentic second-hand sneakers, ready for their next owner.</h1>
+          <p data-i18n="heroText">Shop imported used pairs with clear condition, size, actual photos when available, and simple DM ordering in Cambodia.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#trending" data-i18n="shopTrending">Shop trending pairs</a>
+            <a class="button ghost" href="https://t.me/NextPairKH" target="_blank" rel="noreferrer" data-i18n="dmToOrder">DM to order</a>
+          </div>
+          <div class="trust-strip">
+            <span data-i18n="trustCondition">Clear condition</span>
+            <span data-i18n="trustPhotos">Real photos</span>
+            <span data-i18n="trustLocal">Local ordering first</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="notice-band" id="international">
+        <strong data-i18n="internationalTitle">International Orders Coming Soon</strong>
+        <span data-i18n="internationalText">For now, NextPair KH focuses on Cambodia orders only. International customers can follow us for future updates.</span>
+      </section>
+
+      <section class="section" id="trending">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="trendingEyebrow">Trending used sneakers</p>
+          <h2 data-i18n="trendingTitle">Jordan 3 to 11 and other high-demand pairs</h2>
+          <p data-i18n="trendingText">Used prices are guided by condition, demand, rarity, market value, and current stock.</p>
+        </div>
+        <div class="toolbar">
+          <label>
+            <span data-i18n="searchLabel">Search</span>
+            <input id="searchInput" type="search" placeholder="Jordan 4, size US 9..." />
+          </label>
+          <label>
+            <span data-i18n="categoryLabel">Category</span>
+            <select id="categoryFilter"></select>
+          </label>
+          <label>
+            <span data-i18n="conditionLabel">Condition</span>
+            <select id="conditionFilter"></select>
+          </label>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="section saved-section" id="saved">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="savedEyebrow">Saved shoes</p>
+          <h2 data-i18n="savedTitle">Your saved NextPair list</h2>
+          <p data-i18n="savedText">Tap save on any sneaker and it will appear here for easy checking later.</p>
+        </div>
+        <div class="product-grid" id="savedGrid"></div>
+      </section>
+
+      <section class="split-section" id="condition">
+        <div>
+          <p class="eyebrow" data-i18n="conditionEyebrow">Sneaker condition guide</p>
+          <h2 data-i18n="conditionTitle">Know the pair before you pay.</h2>
+          <p data-i18n="conditionText">Every used pair is listed with a simple condition label and clear notes. Ask for more photos before confirming your order.</p>
+        </div>
+        <div class="condition-list">
+          <article><strong>Like New</strong><span data-i18n="likeNew">Very light wear, clean shape, best condition.</span></article>
+          <article><strong>Good</strong><span data-i18n="good">Normal used wear, still clean and easy to wear.</span></article>
+          <article><strong>Fair</strong><span data-i18n="fair">Visible wear, better price, still usable.</span></article>
+          <article><strong>Worn</strong><span data-i18n="worn">Heavy wear, budget pair, check photos carefully.</span></article>
+        </div>
+      </section>
+
+      <section class="section compact" id="size">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="sizeEyebrow">Size guide</p>
+          <h2 data-i18n="sizeTitle">Simple fit help before ordering</h2>
+        </div>
+        <div class="size-grid">
+          <div><strong>US 7</strong><span>EU 40 / 25 cm</span></div>
+          <div><strong>US 8</strong><span>EU 41 / 26 cm</span></div>
+          <div><strong>US 9</strong><span>EU 42.5 / 27 cm</span></div>
+          <div><strong>US 10</strong><span>EU 44 / 28 cm</span></div>
+          <div><strong>US 11</strong><span>EU 45 / 29 cm</span></div>
+          <div><strong data-i18n="wideFeet">Wide feet?</strong><span data-i18n="wideAdvice">Ask us before ordering. Some Jordan models fit snug.</span></div>
+        </div>
+      </section>
+
+      <section class="split-section dark" id="order">
+        <div>
+          <p class="eyebrow" data-i18n="orderEyebrow">How to order</p>
+          <h2 data-i18n="orderTitle">Simple. Clear. NextPair.</h2>
+        </div>
+        <ol class="steps">
+          <li><strong data-i18n="step1Title">DM us</strong><span data-i18n="step1Text">Send the pair you want.</span></li>
+          <li><strong data-i18n="step2Title">Check details</strong><span data-i18n="step2Text">Confirm size, condition, price, and extra photos.</span></li>
+          <li><strong data-i18n="step3Title">Confirm order</strong><span data-i18n="step3Text">We confirm availability and payment.</span></li>
+          <li><strong data-i18n="step4Title">Receive your pair</strong><span data-i18n="step4Text">Delivery or meet-up in Cambodia.</span></li>
+        </ol>
+      </section>
+
+      <section class="section" id="why">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="whyEyebrow">Why choose NextPair</p>
+          <h2 data-i18n="whyTitle">Built for sneaker buyers in Cambodia</h2>
+        </div>
+        <div class="usp-grid">
+          <article data-i18n="usp1">Cambodia-first used sneaker marketplace</article>
+          <article data-i18n="usp2">Affordable second-hand sneakers</article>
+          <article data-i18n="usp3">Clear condition details</article>
+          <article data-i18n="usp4">Actual photos of available pairs when possible</article>
+          <article data-i18n="usp5">Easy ordering through Instagram, Facebook, and Telegram</article>
+          <article data-i18n="usp6">Fair and clear pricing</article>
+          <article data-i18n="usp7">Curated trending sneaker picks</article>
+          <article data-i18n="usp8">Simple size help</article>
+          <article data-i18n="usp9">Fast and friendly support</article>
+          <article data-i18n="usp10">Easy communication in English, Khmer, and Chinese</article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div>
+          <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+          <h2 data-i18n="contactTitle">Ready to claim your next pair?</h2>
+          <p data-i18n="contactText">Message us with the product name, size, and any questions. We will confirm stock before payment.</p>
+        </div>
+        <div class="contact-actions" id="contactActions"></div>
+      </section>
+
+      <section class="admin-panel" id="admin">
+        <div class="admin-login" id="adminLogin">
+          <p class="eyebrow">Owner access</p>
+          <h2>Admin is locked</h2>
+          <p>Enter the NextPair KH admin password to manage products and uploads.</p>
+          <form id="adminLoginForm" class="admin-login-form">
+            <label>Admin password <input id="adminPassword" type="password" autocomplete="current-password" /></label>
+            <button class="button primary" type="submit">Unlock admin</button>
+          </form>
+        </div>
+        <div class="admin-content" id="adminContent" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">NextPair Admin</p>
+          <h2>Manage products, banners, and contact links</h2>
+          <p>Changes save to the local backend JSON file. Upload actual pair photos here when stock arrives.</p>
+          <button class="button ghost" type="button" id="adminLogout">Lock admin</button>
+        </div>
+        <div class="admin-layout">
+          <form id="productForm" class="admin-form">
+            <input type="hidden" id="productId" />
+            <label>Name <input id="name" required /></label>
+            <label>Category <input id="category" required /></label>
+            <div class="form-row">
+              <label>Market price <input id="originalPrice" type="number" min="0" required /></label>
+              <label>NextPair price <input id="usedPrice" type="number" min="0" required /></label>
+            </div>
+            <div class="form-row">
+              <label>Condition
+                <select id="condition" required>
+                  <option>Like New</option><option>Good</option><option>Fair</option><option>Worn</option>
+                </select>
+              </label>
+              <label>Score <input id="conditionScore" placeholder="8.5/10" /></label>
+            </div>
+            <label>Condition notes <textarea id="conditionNotes"></textarea></label>
+            <div class="form-row">
+              <label>Size <input id="sizeField" required /></label>
+              <label>Stock
+                <select id="stock" required>
+                  <option>Available</option><option>Low Stock</option><option>Reserved</option><option>Sold</option>
+                </select>
+              </label>
+            </div>
+            <label>Badges <input id="badges" placeholder="Trending, Price Drop" /></label>
+            <label>Authenticity notes <textarea id="authenticity"></textarea></label>
+            <label>Fit advice <textarea id="fitAdvice"></textarea></label>
+            <label>Image URLs <textarea id="images" placeholder="One image URL per line"></textarea></label>
+            <label>Upload actual pair photo <input id="imageUpload" type="file" accept="image/png,image/jpeg,image/webp" /></label>
+            <div class="form-actions">
+              <button class="button primary" type="submit">Save product</button>
+              <button class="button ghost" type="button" id="resetForm">New product</button>
+            </div>
+          </form>
+          <div class="admin-list" id="adminList"></div>
+        </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <button class="drawer-close" id="drawerClose" aria-label="Close product details">×</button>
+      <div id="drawerContent"></div>
+    </aside>
+
+    <footer class="footer">
+      <span class="footer-brand"><img class="footer-logo" src="/nextpair-logo.svg.jpg" alt="NextPair KH logo" /><strong>NextPair KH</strong></span>
+      <span data-i18n="footerText">Authentic second-hand sneakers. Phnom Penh, Cambodia.</span>
+      <a href="#international" data-i18n="footerInternational">International Orders Coming Soon</a>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

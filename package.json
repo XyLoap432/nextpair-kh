@@ -1,0 +1,10 @@
+{
+  "name": "nextpair-kh",
+  "version": "1.0.0",
+  "description": "NextPair KH second-hand sneaker ecommerce website with admin backend.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "private": true
+}
